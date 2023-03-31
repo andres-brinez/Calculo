@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cálculo de áreas y volúmenes</title>
+    <link rel="stylesheet" href="./static/css/style.css">
+  </head>
+  <body>
+    <h1>Cálculo de áreas y volúmenes</h1>
+    <form>
+      <label for="shape">Seleccione una forma:</label>
+      <select id="shape">
+        <option value="square">Cuadrado</option>
+        <option value="rectangle">Rectángulo</option>
+        <option value="circle">Círculo</option>
+        <option value="triangle">Triángulo</option>
+        <option value="sphere">Esfera</option>
+        <option value="cylinder">Cilindro</option>
+      </select>
+      <br>
+      <div class="input-container">
+        <label for="width">Ancho:</label>
+        <input type="number" id="width">
+      </div>
+      <div class="input-container" >
+        <label for="height">Altura:</label>
+        <input type="number" id="height">
+      </div>
+      <div class="input-container" id="radius-container">
+        <label for="radius">Radio:</label>
+        <input type="number" id="radius">
+      </div>
+
+      <button type="button" id="calculate-btn">Calcular</button>
+   
+    </form>
+    <div id="result-container">
+      <img id="shape-image" src="" alt="Imagen de la forma seleccionada">
+      <p id="result"></p>
+    </div>
+    <script type="module" src="./static/js/script.js"></script>
+    <script src="./static/js/DOM.js"></script>
+  </body>
+</html>
