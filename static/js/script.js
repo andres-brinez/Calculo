@@ -83,6 +83,12 @@ function mostrarInformacion(figure){
       widthInput.disabled = true;
       heightInput.disabled = true;
 
+    }
+
+    else if (figure === "cylinder"){
+      // se deshabilita el input para no ingresar estos campos
+      widthInput.disabled = true;
+      heightInput.disabled = false;
 
     }
   }
